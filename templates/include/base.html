@@ -157,6 +157,20 @@
                                         </li>
                                     </ul>
                                 </li>
+
+                                <li>
+                                    <a>性能优化<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="{% url 'SlowQuery' %}">慢sql查询</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="{% url 'CollectMetadata' %}">元数据收集</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                             {% if user_info.0.userrolerelationship__role_id == 1 %}
                                 <li>
                                     <a>备份与恢复<span class="fa arrow"></span></a>

@@ -1,0 +1,59 @@
+{% extends 'include/base.html' %}
+
+{% block title %}
+    SlowSql
+{% endblock %}
+
+{% block body_body %}
+    <div>
+        <div class="col-lg-2">
+            <select class="form-control">
+                <option>5</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="col-lg-2">
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="table table-bordered">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a>SQL_ID</a></td>
+                    <td>SQL content</td>
+                    <td>详情</td>
+                </tr>
+
+                <tr>
+                    <td><a>SQL_ID</a></td>
+                    <td>SQL content</td>
+                    <td>详情</td>
+                </tr>
+
+                <tr>
+                    <td><a>SQL_ID</a></td>
+                    <td>SQL content</td>
+                    <td>详情</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
